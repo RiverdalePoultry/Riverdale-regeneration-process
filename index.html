@@ -22,8 +22,9 @@
             justify-content: center;
             flex-direction: column;
             padding: 20px;
+            position: relative;
         }
-        header img {
+        header img.logo {
             width: 150px;
             margin-bottom: 10px;
         }
@@ -31,6 +32,15 @@
             font-size: 1.8em;
             margin: 0;
         }
+        
+        /* QR Code positioning */
+        header img.qr-code {
+            width: 100px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
         section {
             max-width: 800px;
             margin: 20px 0;
@@ -52,9 +62,10 @@
 </head>
 <body>
 
-    <!-- Header with Logo -->
+    <!-- Header with Logo and QR Code -->
     <header>
-        <img src="riverdale_logo.png" alt="Riverdale Poultry Logo">
+        <img src="riverdale_logo.png" alt="Riverdale Poultry Logo" class="logo">
+        <img src="qr_code.png" alt="QR Code for GitHub" class="qr-code">
         <h1>Regeneration Process Overview</h1>
         <p><strong>Origin Date:</strong> Nov 8, 2024</p>
         <p><strong>Approved by:</strong> Operations Department</p>
@@ -98,10 +109,8 @@
 
         <h3>Stopping Regeneration</h3>
         <ul>
-            <li>Automatic:Press the clutch, brake, or accelerator pedal . Press and hold the Regen Inhibit Switch until idle returns to normal. Shut down the engine if needed.
-</li>
-            <li>Manual: Press and hold the Regen Inhibit Switch until idle returns to normal. Shut down the engine if needed.
-</li>
+            <li>Automatic: Press the clutch, brake, or accelerator pedal. Press and hold the Regen Inhibit Switch until idle returns to normal. Shut down the engine if needed.</li>
+            <li>Manual: Press and hold the Regen Inhibit Switch until idle returns to normal. Shut down the engine if needed.</li>
         </ul>
     </section>
 
