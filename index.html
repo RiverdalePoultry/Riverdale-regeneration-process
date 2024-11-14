@@ -5,25 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regeneration Process</title>
     <style>
-        /* Style adjustments */
+        /* Center all content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Center the header and content */
         header {
             display: flex;
             align-items: center;
+            justify-content: center;
+            flex-direction: column;
             padding: 20px;
         }
         header img {
             width: 150px;
-            margin-right: 20px;
+            margin-bottom: 10px;
         }
         header h1 {
             font-size: 1.8em;
             margin: 0;
         }
         section {
+            max-width: 800px;
             margin: 20px 0;
+            padding: 10px;
+            text-align: left;
         }
-        #pdf-content h3 {
-            margin-top: 1.2em;
+        #pdf-download {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        ol, ul {
+            text-align: left;
+            margin-left: 20px;
         }
     </style>
 </head>
@@ -32,11 +56,9 @@
     <!-- Header with Logo -->
     <header>
         <img src="riverdale_logo.png" alt="Riverdale Poultry Logo">
-        <div>
-            <h1>Regeneration Process Overview</h1>
-            <p><strong>Origin Date:</strong> Nov 8, 2024</p>
-            <p><strong>Approved by:</strong> Operations Department</p>
-        </div>
+        <h1>Regeneration Process Overview</h1>
+        <p><strong>Origin Date:</strong> Nov 8, 2024</p>
+        <p><strong>Approved by:</strong> Operations Department</p>
     </header>
 
     <!-- Content from PDF -->
@@ -86,7 +108,7 @@
     <section>
         <h2>Notification Guide</h2>
         <p>This guide provides information on various notifications and the appropriate driver actions.</p>
-        <img src="notification_guide.png" alt="Notification and Driver Actions Guide" style="width: 100%; max-width: 800px; display: block; margin: auto;">
+        <img src="notification_guide.png" alt="Notification and Driver Actions Guide" style="width: 100%; max-width: 800px;">
     </section>
 
     <!-- PDF Download Link -->
