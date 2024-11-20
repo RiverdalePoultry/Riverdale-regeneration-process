@@ -108,19 +108,19 @@
             <p>Download the full notes for the Regeneration Process:</p>
             <button class="button" id="downloadButton" aria-label="Download Regeneration Notes">Download PDF</button>
             <p>Watch the videos below for detailed instructions:</p>
-            <button class="button video-button">
+            <button class="button video-button" onclick="openVideo('https://www.youtube.com/watch?v=yeW9l_pLFuE')">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Icon">
                 Parked Regen - GHG17
             </button>
-            <button class="button video-button">
+            <button class="button video-button" onclick="openVideo('https://freightlineradsaem.azureedge.net/content/dam/enterprise/videos/2625-parked_regen_ghg17_new_dash_cl-2017-11-06.mp4')">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Icon">
                 Freightliner GHG17
             </button>
-            <button class="button video-button">
+            <button class="button video-button" onclick="openVideo('https://www.youtube.com/watch?v=ujUuKAXIHi8')">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Icon">
                 Detroit Diesel Aftertreatment Regeneration Overview
             </button>
-            <button class="button video-button">
+            <button class="button video-button" onclick="openVideo('https://www.youtube.com/watch?v=BnUXJuHbypc')">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Icon">
                 Regen Freightliner Truck: How To Start a Regen
             </button>
@@ -150,6 +150,11 @@
         document.getElementById('downloadButton').addEventListener('click', function () {
             window.open('One_page_Regeneration_Notes.pdf', '_blank');
         });
+
+        // Function to open a video in a new tab
+        function openVideo(url) {
+            window.open(url, '_blank');
+        }
     </script>
 </body>
 </html>
